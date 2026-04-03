@@ -8,6 +8,9 @@
   min-height: 850px;
   
 }
+.service-desc{
+  display: none;
+}
 .services-bg {
  position: absolute;
 inset: 0;

@@ -9,7 +9,9 @@ export default function Services() {
 
   return (
     <section className="services" id="Services">
-
+<h1 className="service-desc">
+  Creating intuitive and visually appealing user interfaces that enhance user experience and engagement.
+</h1>
       <div className="services-bg">
         <Image
           src="/images/light-yellow1.png"
@@ -24,6 +26,7 @@ export default function Services() {
             pointerEvents: "none",
             objectFit: "contain",
           }}
+          loading="lazy"
         />
 
         <Image
@@ -40,6 +43,7 @@ export default function Services() {
             objectFit: "contain",
             filter: "blur(2px)",
           }}
+          loading="lazy"
         />
 
         <Image
@@ -55,6 +59,7 @@ export default function Services() {
             pointerEvents: "none",
             objectFit: "contain",
           }}
+          loading="lazy"
         />
       </div>
 
@@ -82,10 +87,11 @@ export default function Services() {
           <div className="image-stack">
             <Image
               src="/images/ser.png"
-              alt="UI/UX Design"
+              alt="UI UX design dashboard and mobile app interface design example"
               width={416}
               height={308}
               className="img-main"
+              loading="lazy"
             />
           </div>
         </div>
@@ -100,10 +106,11 @@ export default function Services() {
           <div className="image-stack">
             <Image
               src="/images/ser1.png"
-              alt="Web Design"
+              alt="modern responsive website design layout for business website"
               width={416}
               height={308}
               className="img-main move-down"
+              loading="lazy"
             />
           </div>
         </div>
@@ -118,10 +125,11 @@ export default function Services() {
           <div className="image-stack">
             <Image
               src="/images/ser.png"
-              alt="Landing Page"
+             alt="high converting landing page design for marketing and product promotion"
               width={416}
               height={308}
               className="img-main"
+              loading="lazy"
             />
           </div>
         </div>

@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: "Portfolio-Junior",
-  description: "Portfolio-Junior Developer",
+  description: "I am a web developer showcasing my projects, skills, and experience.",
 };
 
 export default function RootLayout({ children }) {
@@ -26,7 +26,20 @@ export default function RootLayout({ children }) {
       >
         {children}
         <SpeedInsights />
+             <script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Person",
+      name: "Jenny",
+      jobTitle: "UI UX Designer",
+      url: "https://junior1-ten.vercel.app/",
+    }),
+  }}
+/>
       </body>
+ 
     </html>
   );
 }

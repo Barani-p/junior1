@@ -68,7 +68,8 @@ export default function Experience() {
           <div className="img-box">
             <img
               src="/images/girl1.png"
-              alt="profile"
+              alt="Jenny UI UX designer professional profile photo"
+              loading="lazy"
             />
           </div>
         </div>

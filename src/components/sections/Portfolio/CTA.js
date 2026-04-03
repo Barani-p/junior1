@@ -5,6 +5,9 @@ import "./Portfolio.css";
 export default function CTA() {
   return (
     <section className="cta">
+      <h1 className="cta-description">
+  Let’s build modern, user-friendly websites and mobile apps that improve user experience and business growth.
+</h1>
       <h2>
         Have an Awsome Project<br /> Idea?{" "}
         <span className="highlight">Let’s Discuss</span>
@@ -15,7 +18,7 @@ export default function CTA() {
         onSubmit={(e) => e.preventDefault()}
       >
         <div className="cta-bg">
-          <img src="images/sms.png" alt="message icon" />
+          <img src="images/sms.png" alt="email contact icon" />
         </div>
 
         <input
@@ -31,17 +34,17 @@ export default function CTA() {
 
       <div className="cta-icon">
         <div className="icons">
-          <img src="images/star.png" alt="" loading="lazy" />
+          <img src="images/star.png" alt="4.9 out of 5 client rating" loading="lazy" />
           <p>4.9/5 Average Ratings</p>
         </div>
 
         <div className="icons">
-          <img src="images/award.png" alt="" loading="lazy" />
+          <img src="images/award.png" alt="award for product design excellence" loading="lazy" />
           <p>4.9/5 Average Ratings</p>
         </div>
 
         <div className="icons">
-          <img src="images/shield-tick.png" alt="" loading="lazy" />
+          <img src="images/shield-tick.png" alt="trusted and secure service badge" loading="lazy" />
           <p>4.9/5 Average Ratings</p>
         </div>
       </div>

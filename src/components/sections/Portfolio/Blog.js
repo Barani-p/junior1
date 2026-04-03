@@ -3,6 +3,16 @@
 import "./Portfolio.css";
 
 export default function Blog() {
+  <script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Blog",
+      "name": "UI UX Blog",
+    }),
+  }}
+/>
   return (
     <section className="blog">
       <div className="blog-header">
@@ -16,12 +26,13 @@ export default function Blog() {
           <div className="blog-img">
             <img
               src="/images/Rectangle6.png"
-              alt="Design Unraveled"
+              alt="UI UX design process and case study - Design Unraveled"
               className="blog-1"
+              loading="lazy"
             />
 
             <div className="arrow">
-              <img src="/images/up right.png" alt="arrow" />
+              <img src="/images/up right.png" alt="arrow" loading="lazy" />
             </div>
           </div>
 
@@ -29,9 +40,9 @@ export default function Blog() {
             <span className="tag">UI / UX Design</span>
 
             <div className="meta">
-              <img src="images/dot.png" alt="" />
+              <img src="images/dot.png" alt="" loading="lazy" />
               Jayesh Patil
-              <img src="images/dot.png" alt="" />
+              <img src="images/dot.png" alt="" loading="lazy" />
               10 Nov, 2023
             </div>
 
@@ -45,12 +56,13 @@ export default function Blog() {
           <div className="blog-img">
             <img
               src="/images/blog2.png"
-              alt="Sugee Project"
+              alt="Loan management mobile app design for rural users UI UX case study"
               className="blog-2"
+              loading="lazy"
             />
 
             <div className="arrow">
-              <img src="/images/up right.png" alt="arrow" />
+              <img src="/images/up right.png" alt="arrow" loading="lazy" />
             </div>
           </div>
 
@@ -58,9 +70,9 @@ export default function Blog() {
             <span className="tag">App Design</span>
 
             <div className="meta">
-              <img src="images/dot.png" alt="" />
+              <img src="images/dot.png" alt="" loading="lazy" />
               Jayesh Patil
-              <img src="images/dot.png" alt="" />
+              <img src="images/dot.png" alt="" loading="lazy" />
               09 Oct, 2023
             </div>
 
@@ -74,12 +86,13 @@ export default function Blog() {
           <div className="blog-img">
             <img
               src="/images/blog3.png"
-              alt="Cinetrade Project"
+              alt="Digital media investment app interface UI UX design project"
               className="blog-2"
+              loading="lazy"
             />
 
             <div className="arrow">
-              <img src="/images/up right.png" alt="arrow" />
+              <img src="/images/up right.png" alt="arrow" loading="lazy" />
             </div>
           </div>
 
@@ -87,9 +100,9 @@ export default function Blog() {
             <span className="tag">App Design</span>
 
             <div className="meta">
-              <img src="images/dot.png" alt="" />
+              <img src="images/dot.png" alt=""  loading="lazy"/>
               Jayesh Patil
-              <img src="images/dot.png" alt="" />
+              <img src="images/dot.png" alt="" loading="lazy" />
               13 Aug, 2023
             </div>
 
@@ -101,5 +114,6 @@ export default function Blog() {
 
       </div>
     </section>
+    
   );
 }

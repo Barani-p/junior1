@@ -8,7 +8,9 @@ export default function Portfolio() {
 
   return (
     <section className="portfolio" id="project">
-      
+      <h1 className="portfolio-description">
+  Explore my latest UI/UX design projects including web apps, mobile apps, and dashboard interfaces designed for performance and usability.
+</h1>
       <div className="portfolio-header">
         <h2 className="portfolio-title">
           Lets have a look at my <span>Portfolio</span>
@@ -27,15 +29,15 @@ export default function Portfolio() {
         >
           <img
             src="images/Frame.png"
-            alt="Lirante Project"
+            alt="Lirante website UI UX design project showcasing modern interface and user experience"
             loading="lazy"
           />
 
           <div className="portfolio-overlay">
             <h3>Lirante</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Sed congue interdum ligula a dignissim. Lorem ipsum dolor sit amet.
+              A modern UI/UX design project focused on creating intuitive user experiences 
+              and improving customer engagement.
             </p>
           </div>
         </div>
@@ -46,15 +48,15 @@ export default function Portfolio() {
         >
           <img
             src="images/Frame.png"
-            alt="Lirante Project"
+           alt="Lirante website UI UX design project showcasing modern interface and user experience"
             loading="lazy"
           />
 
           <div className="portfolio-overlay">
             <h3>Lirante</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Sed lobortis orci elementum egestas lobortis.
+              A modern UI/UX design project focused on creating intuitive user experiences 
+              and improving customer engagement.
             </p>
           </div>
         </div>

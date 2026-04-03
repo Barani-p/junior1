@@ -6,6 +6,9 @@
   padding: 0 20px;
   background-color: #ffff;
 }
+.portfolio-description{
+  display: none;
+}
 
 .portfolio-header {
   display: flex;
@@ -215,6 +218,9 @@
   margin: 80px 0 60px;
   position: relative;
   top: 250px;
+}
+.cta-description{
+  display: none;
 }
 
 .cta h2,

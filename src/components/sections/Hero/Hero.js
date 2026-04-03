@@ -101,19 +101,22 @@ export default function Hero() {
     <section className="hero" id="home" ref={mainRef}>
       
       <div className="hero-badge">Hello!</div>
+    <h1 className="hero-description">
+   I design user-friendly digital products, websites, and mobile apps with a focus on modern UI/UX and performance.
+  </h1>
 
-      <img src="/images/Vector1.png" className="vector-img" alt="vector" />
+      <img src="/images/Vector1.png" className="vector-img" alt="decorative background shape" loading="lazy" />
       <div className="hero-line"></div>
 
       <h1 className="hero-title">
         I’m <span>Jenny</span>, <br />
         Product Designer
       </h1>
-
-      <img src="/images/Vector2.png" className="vector2-img" alt="vector" />
+ 
+      <img src="/images/Vector2.png" className="vector2-img" alt="decorative background shape"  loading="lazy"/>
 
       <div className="hero-left-box">
-        <img src="/images/quote-up.svg" alt="quote icon" />
+        <img src="/images/quote-up.svg" alt="quote icon" loading="lazy" />
         <p>
           Jenny’s Exceptional product design <br />
           ensure our website’s success. <br />
@@ -123,11 +126,11 @@ export default function Hero() {
 
       <div className="hero-right-box">
         <div className="stars">
-          <img src="/images/Star.svg" alt="star"  />
-          <img src="/images/Star.svg" alt="star"  />
-          <img src="/images/Star.svg" alt="star"  />
-          <img src="/images/Star.svg" alt="star"  />
-          <img src="/images/Star.svg" alt="star"  />
+          <img src="/images/Star.svg" alt="5 star rating" loading="lazy"  />
+          <img src="/images/Star.svg" alt="5 star rating" loading="lazy" />
+          <img src="/images/Star.svg" alt="5 star rating" loading="lazy" />
+          <img src="/images/Star.svg" alt="5 star rating" loading="lazy" />
+          <img src="/images/Star.svg" alt="5 star rating" loading="lazy" />
         </div>
 
         <h2>10 Years</h2>
@@ -142,7 +145,7 @@ export default function Hero() {
    
 
       <div className="hero-image">
-        <img src="/images/girl.png" alt="profile" />
+        <img src="/images/girl.png" alt="Jenny product designer profile" loading="lazy"/>
         <div className="bg-shape"></div>
       </div>
 
