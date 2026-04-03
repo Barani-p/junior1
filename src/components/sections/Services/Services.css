@@ -1,0 +1,352 @@
+@import url('https://fonts.cdnfonts.com/css/lufga');
+
+.services {
+  position: relative;
+  padding: 116px 71px;
+  overflow: hidden;
+  height: auto;
+  min-height: 850px;
+  
+}
+.services-bg {
+ position: absolute;
+inset: 0;
+background: 
+  linear-gradient(rgba(0, 0, 0, 0.507),  rgba(0, 0, 0, 0.666)),
+  url("/images/Background_services.jpg") center/cover no-repeat;
+z-index: -1;
+border-radius: 50px;
+}
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.header h2 {
+  color: var(--Gray-25, #FCFCFD);
+  font-family: 'Lufga', sans-serif;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%; 
+  letter-spacing: -1.5px;
+  margin: 0;
+}
+
+.header h2 span {
+  color: var(--Orange-400, #FD853A);
+  font-family: 'Lufga', sans-serif;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: -1.5px;
+}
+
+.header p {
+  color: var(--white, #FFF);
+  font-family: 'Lufga', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0;
+  width: 500px;
+  opacity: 0.8;
+  margin: 0;
+}
+
+.cards {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: stretch;
+  margin-top: 50px;
+  margin-bottom: 60px;
+}
+
+.card {
+  flex: 1;
+  max-width: 400px;
+  height: 320px;
+  border-radius: 35px;
+  position: relative;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.177); /* Subtle glass */
+  border: 1.6px solid rgba(255, 255, 255, 0.225);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  transition: all 0.4s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.card:hover {
+  background: rgba(255, 255, 255, 0.06); 
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.card h3 {
+  font-size: 32px;
+  font-weight: 500;
+  margin: 0;
+  padding: 35px 35px 25px 35px;
+  font-family: 'Lufga', sans-serif;
+  letter-spacing: -0.5px;
+}
+
+.divider {
+  height: 1px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.4);
+  margin: 0;
+  display: block;
+  flex-shrink: 0;
+  position: relative;
+  z-index: 2;
+}
+
+.image-stack {
+  position: relative;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 100%;
+  padding-top: 10px;
+  overflow: visible;
+}
+
+.img-main {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
+
+.move-down {
+  transform: scale(1.05) translateY(60px); /* Enhance the highlighted card */
+  width: 95%;
+}
+
+/* Arrow Button Styles */
+.arrow-btn {
+  position: absolute;
+  bottom: -70px;
+  right: 0;
+  width: 110px;
+  height: 110px;
+  background-color: #1D2939; 
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.arrow-btn svg {
+  width: 70px;
+  height: 70px;
+  transition: all 0.3s ease;
+}
+.dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 180px;
+  gap: 12px;
+  position: relative;
+  z-index: 10;
+}
+
+.dots span {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #D9D9D9;
+  display: inline-block;
+  cursor: pointer;
+  transition: all 0.3s ease;
+} 
+
+.dots .active {
+  width: 60px;
+  height: 15px;
+  border-radius: 10px;
+  background: #FD853A;
+}
+
+
+/* 👇 Hover ANYTHING inside card */
+.cards .card:hover {
+  background: #FD853A; 
+  cursor: pointer;
+}
+
+/* Arrow color change */
+.cards .card:hover .arrow-btn {
+  background: #FD853A; /* or white/any color */
+}
+
+
+/* ========== RESPONSIVE: SERVICES ========== */
+@media (max-width: 1024px) {
+  .services {
+    height: auto;
+    padding: 60px 30px;
+  }
+  .cards {
+    height: auto;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+  .card {
+    width: calc(50% - 20px);
+    height: auto;
+    min-height: 320px;
+  }
+  .header h2,
+  .header h2 span {
+    font-size: 48px;
+  }
+  .header p {
+    width: 100%;
+    font-size: 16px;
+  }
+  .arrow-btn {
+    width: 90px;
+    height: 90px;
+    bottom: -45px;
+  }
+  .arrow-btn svg {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .services {
+    padding: 40px 16px;
+    border-radius: 24px;
+    min-height: auto;
+  }
+
+  .header {
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 20px;
+  }
+
+  .header h2,
+  .header h2 span {
+    font-size: 38px;
+  }
+
+  .header p {
+    width: 100%;
+    font-size: 15px;
+  }
+
+  .cards {
+    flex-direction: column;
+    margin-top: 40px;
+    align-items: center;
+    gap: 60px;
+    margin-bottom: 80px;
+  }
+  
+  .card {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    min-height: 280px;
+  }
+  
+  .card h3 {
+    font-size: 26px;
+    padding: 24px 24px 16px 24px;
+  }
+  
+  .img-main {
+    max-width: 260px;
+  }
+  
+  .move-down {
+    transform: scale(1.05) translateY(30px);
+  }
+
+  .arrow-btn {
+    width: 80px;
+    height: 80px;
+    bottom: -40px;
+    right: -10px;
+  }
+  
+  .arrow-btn svg {
+    width: 45px;
+    height: 45px;
+  }
+
+  .dots {
+    margin-top: 40px;
+    top: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .header h2,
+  .header h2 span {
+    font-size: 32px;
+  }
+
+  .card {
+    max-width: 290px;
+    min-height: 250px;
+  }
+  
+  .card h3 {
+    font-size: 24px;
+    padding: 20px 20px 12px 20px;
+  }
+
+  .img-main {
+    max-width: 230px;
+  }
+  
+  .move-down {
+    transform: scale(1.05) translateY(20px);
+    width: 230px;
+    height: 230px;
+    position: relative;
+    bottom: 6px;
+  }
+
+  .arrow-btn {
+    width: 70px;
+    height: 70px;
+    bottom: -35px;
+    right: -15px;
+  }
+  
+  .arrow-btn svg {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .cards {
+    gap: 50px;
+    margin-bottom: 60px;
+  }
+}
