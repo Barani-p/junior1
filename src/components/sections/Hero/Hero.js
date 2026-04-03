@@ -105,7 +105,12 @@ export default function Hero() {
    I design user-friendly digital products, websites, and mobile apps with a focus on modern UI/UX and performance.
   </h1>
 
-      <img src="/images/Vector1.png" className="vector-img" alt="decorative background shape" loading="lazy" />
+      <img
+       src="/images/Vector1.png"
+        className="vector-img" 
+        alt="decorative background shape"
+         loading="lazy"
+          />
       <div className="hero-line"></div>
 
       <h1 className="hero-title">

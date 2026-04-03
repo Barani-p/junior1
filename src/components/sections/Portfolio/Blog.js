@@ -2,6 +2,7 @@
 
 import "./Portfolio.css";
 
+
 export default function Blog() {
   <script
   type="application/ld+json"

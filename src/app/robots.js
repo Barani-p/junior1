@@ -8,6 +8,6 @@ export default function robots() {
     allow: "/",
   },
 ],
-    sitemap: `${baseUrl}/sitemap.xml`,
+    sitemap: `https://junior1-ten.vercel.app/sitemap.xml`,
   };
 }
