@@ -155,7 +155,7 @@ export default function Hero() {
 
       <div className="robot-wrapper" ref={sceneRef}>
         <div className="robot-img">
-          <ThreeScene ref={modelRef} className="Model" />
+          <ThreeScene customRef={modelRef} className="Model" />
         </div>
       </div>
    

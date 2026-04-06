@@ -14,6 +14,14 @@ export default function Services() {
       </h1>
       <div className="services-bg">
         <Image
+          src="/images/Background_services.jpg"
+          alt="Services Background Pattern"
+          fill
+          style={{ objectFit: "cover", zIndex: -1, pointerEvents: "none" }}
+          quality={75}
+          sizes="100vw"
+        />
+        <Image
           src="/images/light-yellow1.png"
           alt="bg-element-1"
           width={432.334}
