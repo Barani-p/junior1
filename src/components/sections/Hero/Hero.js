@@ -161,7 +161,7 @@ export default function Hero() {
    
 
       <div className="hero-image">
-        <Image src={girlImg} alt="Jenny product designer profile" priority />
+        <Image src={girlImg} alt="Jenny product designer profile" priority fetchPriority="high" />
         <div className="bg-shape"></div>
       </div>
 

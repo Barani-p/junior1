@@ -3,32 +3,32 @@
 /* cdnfonts.com doesn't add font-display by default, so we override   */
 /* each weight here so text stays visible during font load.            */
 @font-face {
-  font-family: 'Lufga';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: local('Lufga Regular'), local('Lufga-Regular');
+    font-family: 'Lufga';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('Lufga'), url('https://fonts.cdnfonts.com/s/67775/LufgaRegular.woff') format('woff');
 }
 @font-face {
-  font-family: 'Lufga';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: local('Lufga Medium'), local('Lufga-Medium');
+    font-family: 'Lufga';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: local('Lufga'), url('https://fonts.cdnfonts.com/s/67775/LufgaMedium.woff') format('woff');
 }
 @font-face {
-  font-family: 'Lufga';
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: local('Lufga SemiBold'), local('Lufga-SemiBold');
+    font-family: 'Lufga';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: local('Lufga'), url('https://fonts.cdnfonts.com/s/67775/LufgaSemiBold.woff') format('woff');
 }
 @font-face {
-  font-family: 'Lufga';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: local('Lufga Bold'), local('Lufga-Bold');
+    font-family: 'Lufga';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: local('Lufga'), url('https://fonts.cdnfonts.com/s/67775/LufgaBold.woff') format('woff');
 }
 
 *,
