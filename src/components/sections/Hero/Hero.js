@@ -1,11 +1,21 @@
 "use client";
 
 import "./Hero.css";
-import ThreeScene from "./ThreeScene";
+import Image from "next/image";
+import girlImg from "../../../../public/images/girl.png";
+import vector1Img from "../../../../public/images/Vector1.png";
+import vector2Img from "../../../../public/images/Vector2.png";
+import dynamic from "next/dynamic";
+const ThreeScene = dynamic(() => import("./ThreeScene"), { 
+    ssr: false,
+    loading: () => <div style={{ width: 193, height: 800 }}></div>
+});
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { useRef,useEffect } from "react";
-import Lenis from '@studio-freight/lenis';
+import { useRef, useEffect, useLayoutEffect } from "react";
+import Lenis from 'lenis';
+
+const useIsomorphicLayoutEffect = typeof window !== 'undefined' ? useLayoutEffect : useEffect;
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -14,7 +24,8 @@ export default function Hero() {
   const sceneRef = useRef(null);
   const modelRef = useRef(null);
   const proxy = useRef({ y: 0, x: 0 });
-  useEffect(() => {
+  
+  useIsomorphicLayoutEffect(() => {
     const lenis = new Lenis({
       duration: 1.5,
       smoothWheel: true,
@@ -105,12 +116,12 @@ export default function Hero() {
    I design user-friendly digital products, websites, and mobile apps with a focus on modern UI/UX and performance.
   </h1>
 
-      <img
-       src="/images/Vector1.png"
+      <Image
+        src={vector1Img}
         className="vector-img" 
         alt="decorative background shape"
-         loading="lazy"
-          />
+        priority
+      />
       <div className="hero-line"></div>
 
       <h1 className="hero-title">
@@ -118,10 +129,10 @@ export default function Hero() {
         Product Designer
       </h1>
  
-      <img src="/images/Vector2.png" className="vector2-img" alt="decorative background shape"  loading="lazy"/>
+      <Image src={vector2Img} className="vector2-img" alt="decorative background shape" priority />
 
       <div className="hero-left-box">
-        <img src="/images/quote-up.svg" alt="quote icon" loading="lazy" />
+        <img src="/images/quote-up.svg" alt="quote icon" />
         <p>
           Jenny’s Exceptional product design <br />
           ensure our website’s success. <br />
@@ -131,11 +142,11 @@ export default function Hero() {
 
       <div className="hero-right-box">
         <div className="stars">
-          <img src="/images/Star.svg" alt="5 star rating" loading="lazy"  />
-          <img src="/images/Star.svg" alt="5 star rating" loading="lazy" />
-          <img src="/images/Star.svg" alt="5 star rating" loading="lazy" />
-          <img src="/images/Star.svg" alt="5 star rating" loading="lazy" />
-          <img src="/images/Star.svg" alt="5 star rating" loading="lazy" />
+          <img src="/images/Star.svg" alt="5 star rating" />
+          <img src="/images/Star.svg" alt="5 star rating" />
+          <img src="/images/Star.svg" alt="5 star rating" />
+          <img src="/images/Star.svg" alt="5 star rating" />
+          <img src="/images/Star.svg" alt="5 star rating" />
         </div>
 
         <h2>10 Years</h2>
@@ -150,7 +161,7 @@ export default function Hero() {
    
 
       <div className="hero-image">
-        <img src="/images/girl.png" alt="Jenny product designer profile" loading="lazy"/>
+        <Image src={girlImg} alt="Jenny product designer profile" priority />
         <div className="bg-shape"></div>
       </div>
 

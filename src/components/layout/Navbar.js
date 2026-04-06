@@ -2,6 +2,8 @@
 
 import Link from "next/link";
 import { useState } from "react";
+import Image from "next/image";
+import vectorImg from "../../../public/images/Vector.png";
 import "./Navbar.css";
 
 export default function Navbar() {
@@ -28,7 +30,7 @@ export default function Navbar() {
 
         <div className="nav-center">
           <div className="logo-circle">
-            <img src="/images/Vector.png" alt="logo" />
+            <Image src={vectorImg} alt="logo" priority />
           </div>
           <span className="logo-text">JCREA</span>
         </div>

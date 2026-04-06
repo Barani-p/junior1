@@ -9,9 +9,9 @@ export default function Services() {
 
   return (
     <section className="services" id="Services">
-<h1 className="service-desc">
-  Creating intuitive and visually appealing user interfaces that enhance user experience and engagement.
-</h1>
+      <h1 className="service-desc">
+        Creating intuitive and visually appealing user interfaces that enhance user experience and engagement.
+      </h1>
       <div className="services-bg">
         <Image
           src="/images/light-yellow1.png"
@@ -125,7 +125,7 @@ export default function Services() {
           <div className="image-stack">
             <Image
               src="/images/ser.png"
-             alt="high converting landing page design for marketing and product promotion"
+              alt="high converting landing page design for marketing and product promotion"
               width={416}
               height={308}
               className="img-main"

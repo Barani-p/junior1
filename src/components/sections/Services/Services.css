@@ -1,25 +1,26 @@
-@import url('https://fonts.cdnfonts.com/css/lufga');
-
 .services {
   position: relative;
   padding: 116px 71px;
   overflow: hidden;
   height: auto;
   min-height: 850px;
-  
+
 }
-.service-desc{
+
+.service-desc {
   display: none;
 }
+
 .services-bg {
- position: absolute;
-inset: 0;
-background: 
-  linear-gradient(rgba(0, 0, 0, 0.507),  rgba(0, 0, 0, 0.666)),
-  url("/images/Background_services.jpg") center/cover no-repeat;
-z-index: -1;
-border-radius: 50px;
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.507), rgba(0, 0, 0, 0.666)),
+    url("/images/Background_services.jpg") center/cover no-repeat;
+  z-index: -1;
+  border-radius: 50px;
 }
+
 .container {
   max-width: 1200px;
   margin: auto;
@@ -39,7 +40,7 @@ border-radius: 50px;
   font-size: 56px;
   font-style: normal;
   font-weight: 500;
-  line-height: 100%; 
+  line-height: 100%;
   letter-spacing: -1.5px;
   margin: 0;
 }
@@ -83,7 +84,8 @@ border-radius: 50px;
   border-radius: 35px;
   position: relative;
   color: #fff;
-  background: rgba(255, 255, 255, 0.177); /* Subtle glass */
+  background: rgba(255, 255, 255, 0.177);
+  /* Subtle glass */
   border: 1.6px solid rgba(255, 255, 255, 0.225);
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
   transition: all 0.4s ease;
@@ -92,7 +94,7 @@ border-radius: 50px;
 }
 
 .card:hover {
-  background: rgba(255, 255, 255, 0.06); 
+  background: rgba(255, 255, 255, 0.06);
   border-color: rgba(255, 255, 255, 0.3);
 }
 
@@ -137,7 +139,8 @@ border-radius: 50px;
 
 
 .move-down {
-  transform: scale(1.05) translateY(60px); /* Enhance the highlighted card */
+  transform: scale(1.05) translateY(60px);
+  /* Enhance the highlighted card */
   width: 95%;
 }
 
@@ -148,7 +151,7 @@ border-radius: 50px;
   right: 0;
   width: 110px;
   height: 110px;
-  background-color: #1D2939; 
+  background-color: #1D2939;
   border: none;
   border-radius: 50%;
   display: flex;
@@ -164,6 +167,7 @@ border-radius: 50px;
   height: 70px;
   transition: all 0.3s ease;
 }
+
 .dots {
   display: flex;
   justify-content: center;
@@ -182,7 +186,7 @@ border-radius: 50px;
   display: inline-block;
   cursor: pointer;
   transition: all 0.3s ease;
-} 
+}
 
 .dots .active {
   width: 60px;
@@ -194,13 +198,14 @@ border-radius: 50px;
 
 /* 👇 Hover ANYTHING inside card */
 .cards .card:hover {
-  background: #FD853A; 
+  background: #FD853A;
   cursor: pointer;
 }
 
 /* Arrow color change */
 .cards .card:hover .arrow-btn {
-  background: #FD853A; /* or white/any color */
+  background: #FD853A;
+  /* or white/any color */
 }
 
 
@@ -210,29 +215,35 @@ border-radius: 50px;
     height: auto;
     padding: 60px 30px;
   }
+
   .cards {
     height: auto;
     flex-wrap: wrap;
     gap: 40px;
   }
+
   .card {
     width: calc(50% - 20px);
     height: auto;
     min-height: 320px;
   }
+
   .header h2,
   .header h2 span {
     font-size: 48px;
   }
+
   .header p {
     width: 100%;
     font-size: 16px;
   }
+
   .arrow-btn {
     width: 90px;
     height: 90px;
     bottom: -45px;
   }
+
   .arrow-btn svg {
     width: 50px;
     height: 50px;
@@ -269,23 +280,23 @@ border-radius: 50px;
     gap: 60px;
     margin-bottom: 80px;
   }
-  
+
   .card {
     width: 100%;
     max-width: 350px;
     height: auto;
     min-height: 280px;
   }
-  
+
   .card h3 {
     font-size: 26px;
     padding: 24px 24px 16px 24px;
   }
-  
+
   .img-main {
     max-width: 260px;
   }
-  
+
   .move-down {
     transform: scale(1.05) translateY(30px);
   }
@@ -296,7 +307,7 @@ border-radius: 50px;
     bottom: -40px;
     right: -10px;
   }
-  
+
   .arrow-btn svg {
     width: 45px;
     height: 45px;
@@ -309,6 +320,7 @@ border-radius: 50px;
 }
 
 @media (max-width: 480px) {
+
   .header h2,
   .header h2 span {
     font-size: 32px;
@@ -318,7 +330,7 @@ border-radius: 50px;
     max-width: 290px;
     min-height: 250px;
   }
-  
+
   .card h3 {
     font-size: 24px;
     padding: 20px 20px 12px 20px;
@@ -327,7 +339,7 @@ border-radius: 50px;
   .img-main {
     max-width: 230px;
   }
-  
+
   .move-down {
     transform: scale(1.05) translateY(20px);
     width: 230px;
@@ -342,12 +354,12 @@ border-radius: 50px;
     bottom: -35px;
     right: -15px;
   }
-  
+
   .arrow-btn svg {
     width: 40px;
     height: 40px;
   }
-  
+
   .cards {
     gap: 50px;
     margin-bottom: 60px;

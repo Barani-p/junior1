@@ -21,25 +21,33 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        {/* Preconnect so the browser opens the socket early */}
+        <link rel="preconnect" href="https://fonts.cdnfonts.com" crossOrigin="anonymous" />
+        {/* Single font load with display=swap to prevent invisible text */}
+        <link
+          rel="stylesheet"
+          href="https://fonts.cdnfonts.com/css/lufga?display=swap"
+        />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
         <SpeedInsights />
-             <script
-  type="application/ld+json"
-  dangerouslySetInnerHTML={{
-    __html: JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "Person",
-      name: "Jenny",
-      jobTitle: "UI UX Designer",
-      url: "https://junior1-ten.vercel.app/",
-    }),
-  }}
-/>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Person",
+              name: "Jenny",
+              jobTitle: "UI UX Designer",
+              url: "https://junior1-ten.vercel.app/",
+            }),
+          }}
+        />
       </body>
- 
     </html>
   );
 }

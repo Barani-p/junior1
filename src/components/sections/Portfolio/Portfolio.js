@@ -1,6 +1,8 @@
 "use client";
 
 import "./Portfolio.css";
+import Image from "next/image";
+import frameImg from "../../../../public/images/Frame.png";
 import { useState } from "react";
 
 export default function Portfolio() {
@@ -27,8 +29,8 @@ export default function Portfolio() {
           className="portfolio-card"
           onMouseEnter={() => setActiveIndex(0)}
         >
-          <img
-            src="images/Frame.png"
+          <Image
+            src={frameImg}
             alt="Lirante website UI UX design project showcasing modern interface and user experience"
             loading="lazy"
           />
@@ -46,8 +48,8 @@ export default function Portfolio() {
           className="portfolio-card"
           onMouseEnter={() => setActiveIndex(1)}
         >
-          <img
-            src="images/Frame.png"
+          <Image
+            src={frameImg}
            alt="Lirante website UI UX design project showcasing modern interface and user experience"
             loading="lazy"
           />

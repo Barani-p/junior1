@@ -1,6 +1,10 @@
 "use client";
 
 import "./Portfolio.css";
+import Image from "next/image";
+import rect6Img from "../../../../public/images/Rectangle6.png";
+import blog2Img from "../../../../public/images/blog2.png";
+import blog3Img from "../../../../public/images/blog3.png";
 
 
 export default function Blog() {
@@ -25,8 +29,8 @@ export default function Blog() {
 
         <div className="blog-card">
           <div className="blog-img">
-            <img
-              src="/images/Rectangle6.png"
+            <Image
+              src={rect6Img}
               alt="UI UX design process and case study - Design Unraveled"
               className="blog-1"
               loading="lazy"
@@ -55,8 +59,8 @@ export default function Blog() {
 
         <div className="blog-card">
           <div className="blog-img">
-            <img
-              src="/images/blog2.png"
+            <Image
+              src={blog2Img}
               alt="Loan management mobile app design for rural users UI UX case study"
               className="blog-2"
               loading="lazy"
@@ -85,8 +89,8 @@ export default function Blog() {
 
         <div className="blog-card">
           <div className="blog-img">
-            <img
-              src="/images/blog3.png"
+            <Image
+              src={blog3Img}
               alt="Digital media investment app interface UI UX design project"
               className="blog-2"
               loading="lazy"

@@ -1,6 +1,12 @@
 "use client";
 
 import "./Footer.css";
+import Image from "next/image";
+import facebookImg from "../../../public/images/facebook.png";
+import youtubeImg from "../../../public/images/youtube.png";
+import whatsappImg from "../../../public/images/whatsapp.png";
+import instagramImg from "../../../public/images/instagram.png";
+import filledImg from "../../../public/images/filled.png";
 
 
 export default function Footer() {
@@ -12,7 +18,7 @@ export default function Footer() {
 
         <div className="footer-btn">
           <button type="button">Hire me</button>
-          <img src="/images/up right.png" alt="arrow icon" />
+          <img src="/images/up right.png" alt="arrow icon" width="24" height="24" />
         </div>
       </div>
 
@@ -23,7 +29,7 @@ export default function Footer() {
         <div className="footer-left">
           <div className="logo">
             <div className="logo-circle">
-              <img src="/images/Vector.png" alt="logo icon" />
+              <img src="/images/Vector.png" alt="logo icon" width="24" height="24" />
             </div>
             <h2>JCREA</h2>
           </div>
@@ -33,11 +39,11 @@ export default function Footer() {
           </p>
 
           <div className="socials">
-            <span><img src="/images/facebook.png" alt="facebook" loading="lazy" /></span>
-            <span><img src="/images/youtube.png" alt="youtube" loading="lazy" /></span>
-            <span><img src="/images/whatsapp.png" alt="whatsapp" loading="lazy" /></span>
-            <span><img src="/images/instagram.png" alt="instagram" loading="lazy" /></span>
-            <span><img src="/images/filled.png" alt="other" loading="lazy" /></span>
+            <span><Image src={facebookImg} alt="facebook" loading="lazy" /></span>
+            <span><Image src={youtubeImg} alt="youtube" loading="lazy" /></span>
+            <span><Image src={whatsappImg} alt="whatsapp" loading="lazy" /></span>
+            <span><Image src={instagramImg} alt="instagram" loading="lazy" /></span>
+            <span><Image src={filledImg} alt="other" loading="lazy" /></span>
           </div>
         </div>
 

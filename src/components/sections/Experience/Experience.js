@@ -1,6 +1,8 @@
 "use client";
 
 import "./Experience.css";
+import Image from "next/image";
+import girl1Img from "../../../../public/images/girl1.png";
 
 export default function Experience() {
   return (
@@ -65,8 +67,8 @@ export default function Experience() {
           /> */}
 
           <div className="img-box">
-            <img
-              src="/images/girl1.png"
+            <Image
+              src={girl1Img}
               alt="Jenny UI UX designer professional profile photo"
               loading="lazy"
             />
