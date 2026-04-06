@@ -3,7 +3,7 @@ export default function sitemap() {
 
   return [
     {
-      url:https://junior1-ten.vercel.app/,
+      url:`https://junior1-ten.vercel.app/`,
       lastModified: new Date(),
     },
     {

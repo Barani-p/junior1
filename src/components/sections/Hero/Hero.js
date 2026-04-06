@@ -12,7 +12,7 @@ const ThreeScene = dynamic(() => import("./ThreeScene"), {
 });
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { useRef, useEffect, useLayoutEffect, useState } from "react";
+import { useRef, useEffect, useLayoutEffect } from "react";
 import Lenis from 'lenis';
 
 const useIsomorphicLayoutEffect = typeof window !== 'undefined' ? useLayoutEffect : useEffect;
@@ -24,13 +24,6 @@ export default function Hero() {
   const sceneRef = useRef(null);
   const modelRef = useRef(null);
   const proxy = useRef({ y: 0, x: 0 });
-  const [load3D, setLoad3D] = useState(false);
-
-  useEffect(() => {
-    const timer = setTimeout(() => setLoad3D(true), 1500);
-    return () => clearTimeout(timer);
-  }, []);
-  
   
   useIsomorphicLayoutEffect(() => {
     const lenis = new Lenis({
@@ -162,7 +155,7 @@ export default function Hero() {
 
       <div className="robot-wrapper" ref={sceneRef}>
         <div className="robot-img">
-          {load3D && <ThreeScene customRef={modelRef} className="Model" />}
+          <ThreeScene customRef={modelRef} className="Model" />
         </div>
       </div>
    
