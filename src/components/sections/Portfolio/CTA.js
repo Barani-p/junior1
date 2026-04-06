@@ -64,8 +64,6 @@ export default function CTA() {
             <span>Dashboard <Image src={star3Img} alt="" /></span>
             <span>Wireframe <Image src={star3Img} alt="" /></span>
             <span>User Research <Image src={star3Img} alt="" /></span>
-
-            {/* repeat for marquee effect */}
             <span>UX Design <Image src={star3Img} alt="" /></span>
             <span>App Design <Image src={star3Img} alt="" /></span>
             <span>Dashboard <Image src={star3Img} alt="" /></span>

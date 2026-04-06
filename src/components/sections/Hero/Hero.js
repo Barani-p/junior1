@@ -6,16 +6,17 @@ import girlImg from "../../../../public/images/girl.png";
 import vector1Img from "../../../../public/images/Vector1.png";
 import vector2Img from "../../../../public/images/Vector2.png";
 import dynamic from "next/dynamic";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useRef, useEffect, useLayoutEffect, useState } from "react";
+import Lenis from 'lenis';
 const ThreeScene = dynamic(() => import("./ThreeScene"), { 
     ssr: false,
     loading: () => <div style={{ width: 193, height: 800 }}></div>
 });
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { useRef, useEffect, useLayoutEffect } from "react";
-import Lenis from 'lenis';
 
 const useIsomorphicLayoutEffect = typeof window !== 'undefined' ? useLayoutEffect : useEffect;
+
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -24,6 +25,14 @@ export default function Hero() {
   const sceneRef = useRef(null);
   const modelRef = useRef(null);
   const proxy = useRef({ y: 0, x: 0 });
+  const [isMobile, setIsMobile] = useState(true);
+
+  useEffect(() => {
+    const handleResize = () => setIsMobile(window.innerWidth <= 768);
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
   
   useIsomorphicLayoutEffect(() => {
     const lenis = new Lenis({
@@ -155,7 +164,7 @@ export default function Hero() {
 
       <div className="robot-wrapper" ref={sceneRef}>
         <div className="robot-img">
-          <ThreeScene customRef={modelRef} className="Model" />
+          {!isMobile && <ThreeScene customRef={modelRef} className="Model" />}
         </div>
       </div>
    
