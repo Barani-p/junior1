@@ -170,9 +170,9 @@ export default function Hero() {
       </div>
 
       <div className="robot-wrapper" ref={sceneRef}>
-        // <div className="robot-img">
-        //   {!isMobile && <ThreeScene customRef={modelRef} className="Model" />}
-        // </div>
+    <--! <div className="robot-img">
+       {!isMobile && <ThreeScene customRef={modelRef} className="Model" />}
+     </div> -->
       </div>
    
 
