@@ -1,13 +1,8 @@
 "use client";
 
 import { Canvas } from "@react-three/fiber";
-import { useGLTF, OrbitControls } from "@react-three/drei";
-
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-
-gsap.registerPlugin(ScrollTrigger);
-import { forwardRef, Suspense } from "react";
+import { useGLTF } from "@react-three/drei";
+import { Suspense } from "react";
 
 const Model = ({ customRef }) => {
   const { scene } = useGLTF("/models/model.glb");
@@ -16,14 +11,21 @@ const Model = ({ customRef }) => {
 
 const ThreeScene = ({ customRef }) => {
   return (
-    <Canvas style={{ height: "500px",width:"200px",top:"60px" }}>
+    <Canvas style={{ height: "500px", width: "200px", top: "60px" }}>
       <ambientLight intensity={0.7} />
       <directionalLight position={[50, 10, 20]} />
+
       <Suspense fallback={null}>
         <Model customRef={customRef} />
       </Suspense>
-      <OrbitControls enableZoom={false} />
-      <perspectiveCamera fov={45} near={.1} far={10000} makeDefault position={[3,0,10]}/>
+
+      <perspectiveCamera
+        makeDefault
+        position={[3, 0, 10]}
+        fov={45}
+        near={0.1}
+        far={10000}
+      />
     </Canvas>
   );
 };
