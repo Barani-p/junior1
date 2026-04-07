@@ -35,21 +35,23 @@ export default function Hero() {
   }, []);
   
   useIsomorphicLayoutEffect(() => {
-    const lenis = new Lenis({
-      duration: 1.5,
-      smoothWheel: true,
-    });
-    
-    lenis.on('scroll', ScrollTrigger.update);
-    
-    function raf(time) {
-      lenis.raf(time * 1000);
-    }
-    
-    gsap.ticker.add(raf);
-    gsap.ticker.lagSmoothing(0);
+    let ctx = gsap.matchMedia();
 
-    const ctx = gsap.context(() => {
+    ctx.add("(min-width: 769px)", () => {
+      const lenis = new Lenis({
+        duration: 1.5,
+        smoothWheel: true,
+      });
+      
+      lenis.on('scroll', ScrollTrigger.update);
+      
+      function raf(time) {
+        lenis.raf(time * 1000);
+      }
+      
+      gsap.ticker.add(raf);
+      gsap.ticker.lagSmoothing(0);
+
       const tl = gsap.timeline({
         scrollTrigger: {
           trigger: mainRef.current,
@@ -58,7 +60,7 @@ export default function Hero() {
           scrub: 2.3,
         },
       })
-  .to(sceneRef.current, {
+      .to(sceneRef.current, {
         ease: "none",
         x: "-60vw",
         y: "100vh",
@@ -109,12 +111,14 @@ export default function Hero() {
           }
         }
       }, "step3");
+
+      return () => {
+        gsap.ticker.remove(raf);
+        lenis.destroy();
+      };
     });
-    return () => {
-      ctx.revert();
-      gsap.ticker.remove(raf);
-      lenis.destroy();
-    };
+
+    return () => ctx.revert();
   }, []);
 
   return (
@@ -125,12 +129,13 @@ export default function Hero() {
    I design user-friendly digital products, websites, and mobile apps with a focus on modern UI/UX and performance.
   </h1>
 
-      <Image
-        src={vector1Img}
-        className="vector-img" 
-        alt="decorative background shape"
-        priority
-      />
+      {!isMobile && (
+        <Image
+          src={vector1Img}
+          className="vector-img" 
+          alt="decorative background shape"
+        />
+      )}
       <div className="hero-line"></div>
 
       <h1 className="hero-title">
@@ -138,7 +143,9 @@ export default function Hero() {
         Product Designer
       </h1>
  
-      <Image src={vector2Img} className="vector2-img" alt="decorative background shape" priority />
+      {!isMobile && (
+        <Image src={vector2Img} className="vector2-img" alt="decorative background shape" />
+      )}
 
       <div className="hero-left-box">
         <img src="/images/quote-up.svg" alt="quote icon" />
@@ -170,7 +177,13 @@ export default function Hero() {
    
 
       <div className="hero-image">
-        <Image src={girlImg} alt="Jenny product designer profile" priority fetchPriority="high" />
+        <Image 
+          src={girlImg} 
+          alt="Jenny product designer profile" 
+          priority 
+          fetchPriority="high" 
+          sizes="(max-width: 768px) 100vw, 50vw" 
+        />
         <div className="bg-shape"></div>
       </div>
 
