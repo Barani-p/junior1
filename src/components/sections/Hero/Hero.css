@@ -380,7 +380,7 @@ top: 25px;
   .stars {
     justify-content: center;
     flex-wrap: wrap;
-    gap: 4px;
+    gap: 3.5px;
   }
 
   .stars img {
