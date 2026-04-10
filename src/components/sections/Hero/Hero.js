@@ -132,11 +132,9 @@ export default function Hero() {
       
       <div className="hero-badge">Hello!</div>
 
-      <h1 className="hero-description">
+      {/* <h1 className="hero-description">
         I design user-friendly digital products, websites, and mobile apps with a focus on modern UI/UX and performance.
-      </h1>
-
-      {/* ✅ ALWAYS render, hide via CSS */}
+      </h1> */}
       <Image
         src={vector1Img}
         className={`vector-img ${isMobile ? "hide-mobile" : ""}`}

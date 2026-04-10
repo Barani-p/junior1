@@ -6,9 +6,12 @@
   text-align: center;
   padding-top: 60px;
 }
-.hero-description{
-  display:none;
-}
+/* .hero-description {
+  display: block;
+  font-size: 14px;
+  padding: 0 16px;
+  margin-top: 10px;
+} */
 
 .hero-badge {
   display: inline-block;
@@ -313,7 +316,9 @@ top: 25px;
 
 /* ========== RESPONSIVE: HERO — 768px ========== */
 @media (max-width: 768px) {
-
+.hero-image {
+    order: -1;   /* move image to top */
+  }
   /* Section — flex column, everything stacks */
   .hero {
     height: auto;
