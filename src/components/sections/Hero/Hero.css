@@ -11,9 +11,9 @@
 .hero-badge {
   display: inline-block;
   height: 50px;
-padding: 10px 10px;
-width: 120px;
-  border-radius: 38.235px;
+ padding: 10px 10px;
+ width: 120px;
+ border-radius: 38.235px;
 border: 1.275px solid #171717;
 background: rgba(255, 255, 255, 0.10);
   position: relative;

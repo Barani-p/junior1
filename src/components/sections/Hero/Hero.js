@@ -131,19 +131,13 @@ export default function Hero() {
     <section className="hero" id="home" ref={mainRef}>
       
       <div className="hero-badge">Hello!</div>
-
-      {/* <h1 className="hero-description">
-        I design user-friendly digital products, websites, and mobile apps with a focus on modern UI/UX and performance.
-      </h1> */}
       <Image
         src={vector1Img}
         className={`vector-img ${isMobile ? "hide-mobile" : ""}`}
         alt="decorative background shape"
       />
-
+      
       <div className="hero-line"></div>
-
-      {/* ✅ IMPORTANT: LCP text */}
       <h1 className="hero-title">
         I’m <span>Jenny</span>, <br />
         Product Designer
@@ -176,15 +170,11 @@ export default function Hero() {
         <h2>10 Years</h2>
         <p>Experience</p>
       </div>
-
-      {/* ✅ ALWAYS in DOM */}
       <div className={`robot-wrapper ${isMobile ? "hide-mobile" : ""}`} ref={sceneRef}>
         <div className="robot-img">
           <ThreeScene customRef={modelRef} className="Model" />
         </div>
       </div>
-
-      {/* ✅ LCP IMAGE */}
       <div className="hero-image">
         <Image
           src={girlImg}
