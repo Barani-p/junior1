@@ -15,14 +15,14 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   metadataBase: new URL("https://junior1-ioi5.vercel.app"),
-  title: "Portfolio-Junior",
-  description: "I am a web developer showcasing my projects, skills, and experience.",
+  title: "Jenny | UI UX Product Designer",
+  description: "Jenny crafts modern UI/UX designs for web and mobile apps, focused on user experience.",
   alternates: {
     canonical: "https://junior1-ioi5.vercel.app",
   },
   openGraph: {
-    title: "Portfolio-Junior",
-    description: "I am a web developer showcasing my projects, skills, and experience.",
+    title: "Jenny | UI UX Product Designer",
+    description: "Jenny crafts modern UI/UX designs for web and mobile apps, focused on user experience.",
     url: "https://junior1-ioi5.vercel.app",
     siteName: "Portfolio-Junior",
     locale: "en_US",
@@ -30,8 +30,8 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Portfolio-Junior",
-    description: "I am a web developer showcasing my projects, skills, and experience.",
+    title: "Jenny | UI UX Product Designer",
+    description: "Jenny crafts modern UI/UX designs for web and mobile apps, focused on user experience.",
   },
   robots: {
     index: true,
