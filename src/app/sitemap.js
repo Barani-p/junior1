@@ -3,27 +3,27 @@ export default function sitemap() {
 
   return [
     {
-      url:`https://junior1-ten.vercel.app/`,
+      url:`https://junior1-ioi5.vercel.app/`,
       lastModified: new Date(),
     },
     {
-      url:`https://junior1-ten.vercel.app//#project`,
+      url:`https://junior1-ioi5.vercel.app//#project`,
       lastModified: new Date(),
     },
     {
-      url:`https://junior1-ten.vercel.app//#services`,
+      url:`https://junior1-ioi5.vercel.app//#services`,
       lastModified: new Date(),
     },
     {
-      url:`https://junior1-ten.vercel.app//#about`,
+      url:`https://junior1-ioi5.vercel.app//#about`,
       lastModified: new Date(),
     },
     {
-      url:`https://junior1-ten.vercel.app//#blog`,
+      url:`https://junior1-ioi5.vercel.app//#blog`,
       lastModified: new Date(),
     },
     {
-      url:`https://junior1-ten.vercel.app//#contact`,
+      url:`https://junior1-ioi5.vercel.app//#contact`,
       lastModified: new Date(),
     },
   ];

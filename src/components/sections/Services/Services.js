@@ -9,9 +9,9 @@ export default function Services() {
 
   return (
     <section className="services" id="Services">
-      <h1 className="service-desc">
+      <h2 className="service-desc">
         Creating intuitive and visually appealing user interfaces that enhance user experience and engagement.
-      </h1>
+      </h2>
       <div className="services-bg">
         <Image
           src="/images/Background_services.jpg"

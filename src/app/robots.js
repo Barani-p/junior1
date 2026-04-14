@@ -1,5 +1,5 @@
 export default function robots() {
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://junior1-ten.vercel.app/';
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://junior1-ioi5.vercel.app/';
 
   return {
    rules: [
@@ -8,6 +8,6 @@ export default function robots() {
     allow: "/",
   },
 ],
-    sitemap: `https://junior1-ten.vercel.app/sitemap.xml`,
+    sitemap: `https://junior1-ioi5.vercel.app/sitemap.xml`,
   };
 }

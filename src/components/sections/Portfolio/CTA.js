@@ -11,9 +11,9 @@ import star3Img from "../../../../public/images/Star 3.png";
 export default function CTA() {
   return (
     <section className="cta">
-      <h1 className="cta-description">
+      <h2 className="cta-description">
   Let’s build modern, user-friendly websites and mobile apps that improve user experience and business growth.
-</h1>
+</h2>
       <h2>
         Have an Awsome Project<br /> Idea?{" "}
         <span className="highlight">Let’s Discuss</span>

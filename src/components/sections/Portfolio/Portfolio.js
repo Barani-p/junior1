@@ -10,9 +10,9 @@ export default function Portfolio() {
 
   return (
     <section className="portfolio" id="project">
-      <h1 className="portfolio-description">
+      <h2 className="portfolio-description">
   Explore my latest UI/UX design projects including web apps, mobile apps, and dashboard interfaces designed for performance and usability.
-</h1>
+</h2>
       <div className="portfolio-header">
         <h2 className="portfolio-title">
           Lets have a look at my <span>Portfolio</span>
