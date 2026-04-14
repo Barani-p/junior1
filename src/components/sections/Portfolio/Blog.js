@@ -8,18 +8,18 @@ import blog3Img from "../../../../public/images/blog3.png";
 
 
 export default function Blog() {
-  <script
-  type="application/ld+json"
-  dangerouslySetInnerHTML={{
-    __html: JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "Blog",
-      "name": "UI UX Blog",
-    }),
-  }}
-/>
   return (
     <section className="blog">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Blog",
+            "name": "UI UX Blog",
+          }),
+        }}
+      />
       <div className="blog-header">
         <h2 className="section-title">From my blog post</h2>
         <button type="button">See All</button>

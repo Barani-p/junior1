@@ -1,5 +1,5 @@
 export default function sitemap() {
-  const baseUrl = "https://junior1-ten.vercel.app/"; // 
+  const baseUrl = "https://junior1-ioi5.vercel.app/"; 
 
   return [
     {
