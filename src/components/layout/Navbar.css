@@ -29,6 +29,15 @@
   align-items: center;
 }
 
+/* Reset button defaults for nav buttons */
+.navbar button.nav-item,
+.mobile-menu button.mobile-nav-item {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+
 .nav-item {
   color: var(--white, #FFF);
   font-family: Lufga;

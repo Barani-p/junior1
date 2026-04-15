@@ -12,20 +12,29 @@ export default function Navbar() {
   const toggleMenu = () => setMenuOpen(!menuOpen);
   const closeMenu = () => setMenuOpen(false);
 
+  // Smooth scroll to a section by its id
+  const scrollTo = (id) => {
+    closeMenu();
+    const el = document.getElementById(id);
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
+
   return (
     <nav className="navbar-wrapper">
       <div className="navbar">
 
         <div className="nav-left">
-          <Link href="#home" className="nav-item" onClick={closeMenu}>
+          <button className="nav-item" onClick={() => scrollTo("home")}>
             Home
-          </Link>
-          <Link href="#about" className="nav-item" onClick={closeMenu}>
+          </button>
+          <button className="nav-item" onClick={() => scrollTo("about")}>
             About
-          </Link>
-          <Link href="#Services" className="nav-item" onClick={closeMenu}>
+          </button>
+          <button className="nav-item" onClick={() => scrollTo("Services")}>
             Service
-          </Link>
+          </button>
         </div>
 
         <div className="nav-center">
@@ -36,15 +45,15 @@ export default function Navbar() {
         </div>
 
         <div className="nav-right">
-          <Link href="/resume" className="nav-item" onClick={closeMenu}>
+          <Link href="/resume" className="nav-item">
             Resume
           </Link>
-          <Link href="#project" className="nav-item" onClick={closeMenu}>
+          <button className="nav-item" onClick={() => scrollTo("project")}>
             Project
-          </Link>
-          <Link href="#contact" className="nav-item" onClick={closeMenu}>
+          </button>
+          <button className="nav-item" onClick={() => scrollTo("contact")}>
             Contact
-          </Link>
+          </button>
         </div>
 
         <button
@@ -60,24 +69,24 @@ export default function Navbar() {
       </div>
 
       <div className={`mobile-menu ${menuOpen ? "active" : ""}`}>
-        <Link href="#home" className="mobile-nav-item" onClick={closeMenu}>
+        <button className="mobile-nav-item" onClick={() => scrollTo("home")}>
           Home
-        </Link>
-        <Link href="#about" className="mobile-nav-item" onClick={closeMenu}>
+        </button>
+        <button className="mobile-nav-item" onClick={() => scrollTo("about")}>
           About
-        </Link>
-        <Link href="#Services" className="mobile-nav-item" onClick={closeMenu}>
+        </button>
+        <button className="mobile-nav-item" onClick={() => scrollTo("Services")}>
           Service
-        </Link>
+        </button>
         <Link href="/resume" className="mobile-nav-item" onClick={closeMenu}>
           Resume
         </Link>
-        <Link href="#project" className="mobile-nav-item" onClick={closeMenu}>
+        <button className="mobile-nav-item" onClick={() => scrollTo("project")}>
           Project
-        </Link>
-        <Link href="#contact" className="mobile-nav-item" onClick={closeMenu}>
+        </button>
+        <button className="mobile-nav-item" onClick={() => scrollTo("contact")}>
           Contact
-        </Link>
+        </button>
       </div>
     </nav>
   );

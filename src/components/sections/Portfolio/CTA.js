@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import "./Portfolio.css";
 import Image from "next/image";
@@ -11,12 +11,12 @@ import star3Img from "../../../../public/images/Star 3.png";
 export default function CTA() {
   return (
     <section className="cta">
-      <h2 className="cta-description">
+      <p className="sr-only" aria-label="CTA section description">
   Let’s build modern, user-friendly websites and mobile apps that improve user experience and business growth.
-</h2>
+</p>
       <h2>
         Have an Awsome Project<br /> Idea?{" "}
-        <span className="highlight">Let’s Discuss</span>
+        <span className="highlight">Let's Discuss</span>
       </h2>
 
       <form

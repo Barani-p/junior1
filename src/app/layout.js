@@ -17,6 +17,21 @@ export const metadata = {
   metadataBase: new URL("https://junior1-ioi5.vercel.app"),
   title: "Jenny | UI UX Product Designer",
   description: "Jenny crafts modern UI/UX designs for web and mobile apps, focused on user experience.",
+  keywords: [
+    "UI UX Designer",
+    "Product Designer",
+    "Web Design",
+    "App Design",
+    "User Experience",
+    "Portfolio",
+    "Jenny Designer",
+    "UI Design",
+    "UX Research",
+    "Dashboard Design",
+  ],
+  authors: [{ name: "Jenny", url: "https://junior1-ioi5.vercel.app" }],
+  creator: "Jenny",
+  publisher: "Jenny",
   alternates: {
     canonical: "https://junior1-ioi5.vercel.app",
   },
@@ -24,14 +39,23 @@ export const metadata = {
     title: "Jenny | UI UX Product Designer",
     description: "Jenny crafts modern UI/UX designs for web and mobile apps, focused on user experience.",
     url: "https://junior1-ioi5.vercel.app",
-    siteName: "Portfolio-Junior",
+    siteName: "Jenny – UI UX Portfolio",
     locale: "en_US",
     type: "website",
+    images: [
+      {
+        url: "/images/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jenny – UI UX Product Designer Portfolio",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Jenny | UI UX Product Designer",
     description: "Jenny crafts modern UI/UX designs for web and mobile apps, focused on user experience.",
+    images: ["/images/og-image.jpg"],
   },
   robots: {
     index: true,
@@ -43,6 +67,13 @@ export const metadata = {
       'max-image-preview': 'large',
       'max-snippet': -1,
     },
+  },
+  icons: {
+    icon: [
+      { url: "/favicon.ico" },
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+    ],
+    apple: [{ url: "/apple-touch-icon.png", sizes: "180x180" }],
   },
 };
 
@@ -75,7 +106,20 @@ export default function RootLayout({ children }) {
               "@type": "Person",
               name: "Jenny",
               jobTitle: "UI UX Designer",
+              description: "Jenny crafts modern UI/UX designs for web and mobile apps, focused on user experience and visual excellence.",
               url: "https://junior1-ioi5.vercel.app/",
+              image: "https://junior1-ioi5.vercel.app/images/girl.png",
+              email: "jaycrea36@gmail.com",
+              knowsAbout: ["UI Design", "UX Design", "Product Design", "Web Design", "App Design", "Wireframing", "User Research"],
+              sameAs: [
+                "https://www.instagram.com/",
+                "https://www.facebook.com/",
+                "https://www.linkedin.com/",
+              ],
+              worksFor: {
+                "@type": "Organization",
+                name: "Freelance",
+              },
             }),
           }}
         />
