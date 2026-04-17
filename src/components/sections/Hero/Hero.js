@@ -27,8 +27,8 @@ export default function Hero() {
   const modelRef = useRef(null);
   const proxy = useRef({ y: 0, x: 0 });
 
-  // ✅ FIX: default false (NOT true)
-  const [isMobile, setIsMobile] = useState(false);
+  // null = not yet measured, false = desktop, true = mobile
+  const [isMobile, setIsMobile] = useState(null);
 
   useEffect(() => {
     const handleResize = () => setIsMobile(window.innerWidth <= 768);
@@ -39,6 +39,9 @@ export default function Hero() {
   }, []);
 
   useIsomorphicLayoutEffect(() => {
+    // Only run GSAP + Lenis on confirmed desktop
+    if (isMobile !== false) return;
+
     let ctx = gsap.matchMedia();
 
     ctx.add("(min-width: 769px)", () => {
@@ -125,7 +128,8 @@ export default function Hero() {
     });
 
     return () => ctx.revert();
-  }, []);
+  // Re-run when isMobile resolves (null → false on desktop), so GSAP initialises correctly
+  }, [isMobile]);
 
   return (
     <section className="hero" id="home" ref={mainRef}>
@@ -170,11 +174,14 @@ export default function Hero() {
         <h2>10 Years</h2>
         <p>Experience</p>
       </div>
-      <div className={`robot-wrapper ${isMobile ? "hide-mobile" : ""}`} ref={sceneRef}>
-        <div className="robot-img">
-          <ThreeScene customRef={modelRef} className="Model" />
+      {/* Only render the 3D scene on confirmed desktop — never on mobile */}
+      {isMobile === false && (
+        <div className="robot-wrapper" ref={sceneRef}>
+          <div className="robot-img">
+            <ThreeScene customRef={modelRef} className="Model" />
+          </div>
         </div>
-      </div>
+      )}
       <div className="hero-image">
         <Image
           src={girlImg}

@@ -58,3 +58,15 @@ img {
   white-space: nowrap;
   border-width: 0;
 }
+
+/* ── Content-visibility: skip off-screen sections during first paint ── */
+/* Applied to all below-fold sections for faster FCP/LCP on mobile     */
+.services,
+.experience,
+.portfolio,
+.cta,
+.blog,
+.footer {
+  content-visibility: auto;
+  contain-intrinsic-size: 0 600px;
+}

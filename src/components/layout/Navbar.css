@@ -169,8 +169,39 @@
   color: #fff;
 }
 
-/* ========== RESPONSIVE ========== */
-@media (max-width: 900px) {
+/* ========== RESPONSIVE: NAVBAR — TABLET (769px–1024px) ========== */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .navbar {
+    width: 100%;
+    height: auto;
+    padding: 16px 24px;
+    border-radius: 40px;
+  }
+
+  /* Hide desktop nav links on tablet too */
+  .nav-left,
+  .nav-right {
+    display: none;
+  }
+
+  /* Show hamburger */
+  .hamburger {
+    display: flex;
+  }
+
+  /* Show mobile menu container */
+  .mobile-menu {
+    display: flex;
+  }
+
+  .mobile-nav-item {
+    font-size: 18px;
+    padding: 16px 28px;
+  }
+}
+
+/* ========== RESPONSIVE: NAVBAR — ≤768px ========== */
+@media (max-width: 768px) {
   .navbar {
     width: 100%;
     height: auto;

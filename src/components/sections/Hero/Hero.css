@@ -300,6 +300,127 @@ top: 25px;
   opacity: 0.85;
 }
 
+/* ========== RESPONSIVE: HERO — TABLET (769px–1024px) ========== */
+@media (min-width: 769px) and (max-width: 1024px) {
+
+  .hero {
+    height: auto;
+    min-height: 100vh;
+    padding-top: 50px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Scale the decorative vectors to fit tablet width */
+  .vector-img {
+    max-width: 200px;
+    bottom: 14px;
+    right: 4px;
+  }
+
+  .vector2-img {
+    max-width: 200px;
+    bottom: 18px;
+    right: 200px;
+  }
+
+  /* Hero title */
+  .hero-title {
+    font-size: 72px;
+    margin-top: 16px;
+    padding: 0 30px;
+    line-height: 1.1;
+  }
+
+  .hero-title span {
+    font-size: 72px;
+  }
+
+  /* Info boxes — static, side by side */
+  .hero-left-box,
+  .hero-right-box {
+    position: static;
+    max-width: 46%;
+    text-align: center;
+    margin: 20px 2%;
+    display: inline-block;
+  }
+
+  .hero-left-box p {
+    width: 100%;
+    top: 0;
+    font-size: 16px;
+  }
+
+  .hero-right-box h2 {
+    font-size: 40px;
+  }
+
+  .hero-right-box p {
+    font-size: 16px;
+  }
+
+  /* Hide robot on tablet */
+  .robot-wrapper {
+    display: none;
+  }
+
+  /* Hero image */
+  .hero-image {
+    position: relative;
+    transform: none;
+    left: auto;
+    bottom: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  .hero-image img {
+    height: 420px;
+    max-height: 50vh;
+    position: relative;
+    z-index: 2;
+  }
+
+  .bg-shape {
+    width: 420px;
+    height: 260px;
+    border-radius: 420px 420px 0 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+  }
+
+  /* Buttons */
+  .hero-buttons {
+    position: relative !important;
+    transform: none !important;
+    left: auto !important;
+    bottom: auto !important;
+    margin: 0 auto 30px;
+    display: inline-flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    z-index: 10;
+    max-width: 95%;
+  }
+
+  .btn {
+    padding: 12px 24px;
+    font-size: 15px;
+    white-space: nowrap;
+    gap: 6px;
+  }
+}
+
 /* ========== RESPONSIVE: HERO — 768px ========== */
 @media (max-width: 768px) {
 

@@ -198,20 +198,71 @@ font-weight: 400;
   margin-top: 50px;
 }
 
-/* ========== RESPONSIVE: FOOTER ========== */
-@media (max-width: 1024px) {
+/* ========== RESPONSIVE: FOOTER — TABLET (769px–1024px) ========== */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .footer {
+    padding: 40px 36px;
+    top: 120px;
+    height: auto;
+  }
+
+  .Footer-1 {
+    flex-direction: column;
+    gap: 20px;
+  }
+
   .Footer-1 h3 {
-    font-size: 44px;
+    font-size: 46px;
+  }
+
+  .footer-btn {
+    width: auto;
+    align-self: flex-start;
   }
 
   .footer-left p {
     width: 100%;
-    font-size: 16px;
+    font-size: 17px;
   }
 
   .footer-container {
     grid-template-columns: 1fr 1fr;
     gap: 30px;
+    top: 60px;
+  }
+
+  .footer-news {
+    right: 0;
+  }
+
+  .newsletter {
+    right: 0;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .newsletter input {
+    width: 100%;
+    border-radius: 14px;
+  }
+
+  .newsletter button {
+    width: 100%;
+    border-radius: 8px;
+  }
+
+  .footer-col ul {
+    padding: 16px 0;
+    right: 0;
+  }
+
+  .f-line {
+    margin-top: 60px;
+  }
+
+  .footer-bottom {
+    font-size: 16px;
+    margin-top: 40px;
   }
 }
 

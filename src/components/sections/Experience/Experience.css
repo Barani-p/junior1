@@ -217,14 +217,31 @@
   margin-left: 350px;
   top: -300px;
 }
-@media (max-width: 1024px) {
-  .exp-container h2 { font-size: 44px; }
-  .item h4          { font-size: 28px; }
-  .item p           { font-size: 18px; max-width: 100%; }
-  .left             { right: 0; }
-  .right            { left: 0; }
-  .Bot              { display: none; }
+/* ========== RESPONSIVE: EXPERIENCE — TABLET (769px–1024px) ========== */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .experience { padding: 70px 24px; }
 
+  .exp-container h2 {
+    font-size: 46px;
+    margin-bottom: 50px;
+  }
+
+  /* Collapse the hardcoded pixel offsets */
+  .left  { right: 0; }
+  .right { left:  0; }
+
+  .item h4 { font-size: 30px; }
+  .item p  { font-size: 18px; max-width: 100%; }
+
+  /* Keep the centre line but shrink its container */
+  .timeline {
+    grid-template-columns: 1fr 100px 1fr;
+  }
+
+  /* Hide the floating robot */
+  .Bot { display: none; }
+
+  /* Hire section — stack vertically */
   .hire {
     flex-direction: column;
     height: auto;
@@ -232,14 +249,40 @@
     align-items: center;
     text-align: center;
     top: 80px;
+    padding: 36px 30px;
+    border-radius: 36px;
   }
 
-  .hire-right p { width: 100%; }
+  .hire-right {
+    position: static;
+    width: 100%;
+    text-align: center;
+  }
+
+  .hire-right h2 { font-size: 46px; }
+  .hire-right p  { width: 100%; position: static; font-size: 17px; }
+
+  .img-box img {
+    position: static;
+    max-width: 340px;
+    height: auto;
+    left: 0;
+  }
 
   .stats {
     justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
+  }
+
+  .stats-right { position: static; }
+
+  .stats_btn {
+    position: static;
+    font-size: 22px;
+    padding: 20px 44px;
+    margin: 0 auto;
+    display: flex;
   }
 }
 

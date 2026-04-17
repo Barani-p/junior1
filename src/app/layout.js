@@ -88,10 +88,32 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         <meta name="google-site-verification" content="2caHwKZ6YA3B1Z79eRZTB_VR9ZVUoHjMI6AWmsILeyc" />
+
+        {/* Preload the LCP hero image so it paints before JS hydrates */}
+        <link
+          rel="preload"
+          as="image"
+          href="/images/girl.png"
+          fetchPriority="high"
+        />
+
+        {/* Preload the primary font weight to avoid FOUT */}
+        <link
+          rel="preload"
+          as="font"
+          type="font/woff"
+          href="https://fonts.cdnfonts.com/s/67775/LufgaRegular.woff"
+          crossOrigin="anonymous"
+        />
+
         <link rel="preconnect" href="https://fonts.cdnfonts.com" crossOrigin="anonymous" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&amp;family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&amp;family=Urbanist:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet" />
+        {/* Only load Urbanist — the font actually used in CSS (removed Figtree & IBM Plex Sans) */}
+        <link
+          href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+          rel="stylesheet"
+        />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
