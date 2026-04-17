@@ -8,6 +8,6 @@ export default function robots() {
     allow: "/",
   },
 ],
-    sitemap: `https://junior1-ioi5.vercel.app/sitemap.xml`,
+    sitemap: "https://junior1-ioi5.vercel.app/sitemap.xml"
   };
 }
