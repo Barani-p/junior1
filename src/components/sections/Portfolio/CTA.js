@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import "./Portfolio.css";
 import Image from "next/image";
@@ -12,7 +12,7 @@ export default function CTA() {
   return (
     <section className="cta">
       <p className="sr-only" aria-label="CTA section description">
-  Let’s build modern, user-friendly websites and mobile apps that improve user experience and business growth.
+  Let's build modern, user-friendly websites and mobile apps that improve user experience and business growth.
 </p>
       <h2>
         Have an Awsome Project<br /> Idea?{" "}
@@ -24,7 +24,7 @@ export default function CTA() {
         onSubmit={(e) => e.preventDefault()}
       >
         <div className="cta-bg">
-          <Image src={smsImg} alt="email contact icon" />
+          <Image src={smsImg} alt="email contact icon" width={28} height={28} />
         </div>
 
         <input
@@ -40,17 +40,17 @@ export default function CTA() {
 
       <div className="cta-icon">
         <div className="icons">
-          <Image src={starImg} alt="4.9 out of 5 client rating" loading="lazy" />
+          <Image src={starImg} alt="4.9 out of 5 client rating" width={24} height={24} loading="lazy" />
           <p>4.9/5 Average Ratings</p>
         </div>
 
         <div className="icons">
-          <Image src={awardImg} alt="award for product design excellence" loading="lazy" />
+          <Image src={awardImg} alt="award for product design excellence" width={24} height={24} loading="lazy" />
           <p>4.9/5 Average Ratings</p>
         </div>
 
         <div className="icons">
-          <Image src={shieldImg} alt="trusted and secure service badge" loading="lazy" />
+          <Image src={shieldImg} alt="trusted and secure service badge" width={24} height={24} loading="lazy" />
           <p>4.9/5 Average Ratings</p>
         </div>
       </div>
@@ -59,16 +59,16 @@ export default function CTA() {
         <div className="marquee">
           <div className="marquee-content">
 
-            <span>UX Design <Image src={star3Img} alt="" /></span>
-            <span>App Design <Image src={star3Img} alt="" /></span>
-            <span>Dashboard <Image src={star3Img} alt="" /></span>
-            <span>Wireframe <Image src={star3Img} alt="" /></span>
-            <span>User Research <Image src={star3Img} alt="" /></span>
-            <span>UX Design <Image src={star3Img} alt="" /></span>
-            <span>App Design <Image src={star3Img} alt="" /></span>
-            <span>Dashboard <Image src={star3Img} alt="" /></span>
-            <span>Wireframe <Image src={star3Img} alt="" /></span>
-            <span>User Research <Image src={star3Img} alt="" /></span>
+            <span>UX Design <Image src={star3Img} alt="" width={34} height={34} /></span>
+            <span>App Design <Image src={star3Img} alt="" width={34} height={34} /></span>
+            <span>Dashboard <Image src={star3Img} alt="" width={34} height={34} /></span>
+            <span>Wireframe <Image src={star3Img} alt="" width={34} height={34} /></span>
+            <span>User Research <Image src={star3Img} alt="" width={34} height={34} /></span>
+            <span>UX Design <Image src={star3Img} alt="" width={34} height={34} /></span>
+            <span>App Design <Image src={star3Img} alt="" width={34} height={34} /></span>
+            <span>Dashboard <Image src={star3Img} alt="" width={34} height={34} /></span>
+            <span>Wireframe <Image src={star3Img} alt="" width={34} height={34} /></span>
+            <span>User Research <Image src={star3Img} alt="" width={34} height={34} /></span>
 
           </div>
         </div>

@@ -1,8 +1,7 @@
 /* ========== PORTFOLIO ========== */
 .portfolio {
+  margin-top: 200px;
   margin-bottom: 100px;
-  position: relative;
-  top: 200px;
   padding: 0 20px;
   background-color: #ffff;
 }
@@ -216,8 +215,6 @@
 .cta {
   text-align: center;
   margin: 80px 0 60px;
-  position: relative;
-  top: 250px;
 }
 .cta-description{
   display: none;
@@ -311,8 +308,7 @@
   background: #FB6514;
   padding: 40px 0;
   overflow: hidden;
-  position: relative;
-  top: 100px;
+  margin-top: 40px;
 }
 
 .marquee {
@@ -349,7 +345,8 @@
   0%   { transform: translateX(0%); }
   100% { transform: translateX(-50%); }
 }
-.blog { margin-top: 460px; 
+.blog {
+  margin-top: 60px;
 }
 
 .section-title {
@@ -387,8 +384,7 @@
 }
 
 .blog-grid {
-  position: relative;
-  top: 100px;
+  margin-top: 40px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   align-items: center;

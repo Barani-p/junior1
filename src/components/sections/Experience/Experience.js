@@ -70,6 +70,8 @@ export default function Experience() {
             <Image
               src={girl1Img}
               alt="Jenny UI UX designer professional profile photo"
+              width={480}
+              height={600}
               loading="lazy"
             />
           </div>

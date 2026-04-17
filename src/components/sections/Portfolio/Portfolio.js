@@ -32,6 +32,8 @@ export default function Portfolio() {
           <Image
             src={frameImg}
             alt="Lirante website UI UX design project showcasing modern interface and user experience"
+            width={800}
+            height={371}
             loading="lazy"
           />
 
